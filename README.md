@@ -1,81 +1,74 @@
-# Create a professional, well-formatted README.md file for a Flask-based Free Fire Like API project hosted on Vercel. Use emojis, bold text, code blocks, tables, and clean markdown formatting throughout.
+<div align="center">
 
-**Project Title:** 🔥 Free Fire Like API
+# 🔥 Free Fire Like Sender API
 
-**Badges to include:** Python 3.8+, Flask 2.x, MIT License
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=F75C03&center=true&vCenter=true&width=700&lines=Free+Fire+Like+Sender+API;Powered+by+MAHENDRA+KAR;Fast+%7C+Reliable+%7C+Async;Protobuf+%2B+AES+Encryption" alt="Typing SVG" />
 
-**Sections required (in this exact order):**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=header&text=Free%20Fire%20Like%20API&fontSize=32&fontColor=ffffff&animation=fadeIn" />
 
-1. **📋 Features** — bullet list with ✅ checkmarks:
-   - Send likes to any Free Fire player by UID
-   - Multi-region support (IND, BR, US, SAC, NA, BD)
-   - Daily limit tracking (200 likes/day)
-   - API key authentication
-   - Protobuf + AES encryption
-   - Async request handling with aiohttp
-   - Vercel deployment ready
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-2.x-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Protobuf-4.x-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
 
-2. **🗂️ Project Structure** — code block tree showing:
-   app.py, wsgi.py, index.py, like_pb2.py, uid_generator_pb2.py, visit_count_pb2.py, token_ind.json, token_br.json, token_bd.json, requirements.txt, vercel.json
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Maintained-Yes-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20by%20MAHENDRA%20KAR-red?style=flat-square" />
+</p>
 
-3. **⚙️ Setup & Installation** — numbered steps with commands:
-   - Clone repo: `git clone https://github.com/mahendrakar/free-fire-like-api.git`
-   - Install deps: `pip install -r requirements.txt` (show requirements.txt content in code block)
-   - Create 3 token JSON files (token_ind.json, token_br.json, token_bd.json) with example format
-   - Configure API key in app.py: `VALID_API_KEYS = {"BHUWAN"}`
-   - Run locally: `python app.py` → http://0.0.0.0:8000
-   - Deploy: `vercel --prod`
+</div>
 
-4. **🌐 API Endpoints** — two endpoints with full details:
+---
 
-   **1️⃣ GET /like** — Send Likes
-   - URL: `/like?key=YOUR_API_KEY&uid=PLAYER_UID&region=REGION`
-   - Query params table: key (required), uid (required), region (required)
-   - Example request URL
-   - Success response JSON (200):
-     {
-       "LikesGivenByAPI": 1,
-       "LikesafterCommand": 1,
-       "LikesbeforeCommand": 0,
-       "PlayerNickname": ".ORIGIN..➝✩",
-       "Level": 2,
-       "Region": "IND",
-       "UID": 17978854188,
-       "status": 1,
-       "daily_limit": 200,
-       "used": 1,
-       "remaining": 199
-     }
-   - Response fields table explaining each field (status: 1=Success, 2=Failed, 3=Invalid key)
+<div align="center">
 
-   **2️⃣ GET /remain** — Check Remaining
-   - URL: `/remain`
-   - Response JSON: {"daily_limit": 200, "remaining": 199, "used": 1, "reset_info": "4:00 AM IST"}
-   - Response fields table
+### ⚡ **A Flask-based REST API that sends likes to a Free Fire player's profile using valid access tokens.**
 
-5. **❌ Error Responses** — show JSON for:
-   - 401 Invalid API Key: {"error": "Invalid or missing API key", "status": 3}
-   - 400 Missing Params: {"error": "UID and region are required"}
-   - 500 Server Error: {"error": "Error description here"}
+It sends **AES-encrypted protobuf payloads**, parses the response using **Protobuf**, and returns detailed player info — **UID**, **nickname**, **level**, **likes before/after**, **region**, and **daily usage stats**.
 
-6. **🧪 Usage Examples** — three code blocks:
-   - cURL example
-   - Python requests example
-   - JavaScript fetch example
+</div>
 
-7. **📌 Supported Regions** — table mapping:
-   IND → client.ind.freefiremobile.com
-   BR/US/SAC/NA → client.us.freefiremobile.com
-   BD/Others → clientbp.ppmainecoonghj.com
+---
 
-8. **⚠️ Disclaimer** — educational purposes only, not affiliated with Garena, author not responsible for misuse
+## 🚀 Features
 
-9. **📄 License** — MIT License
+<table>
+<tr>
+<td>
 
-10. **👤 Credits & Author** — 
-    **MAHENDRA**
-    - Role: Developer & Maintainer
+- ✅ Sends **likes** to any Free Fire player by **UID**
+- 🌍 **Multi-region support** (IND, BR, US, SAC, NA, BD)
+- 📊 **Daily limit tracking** (200 likes/day)
+- 🔐 **API key authentication** for secure access
+- 🧠 **Token management** by region
+- 📦 **Protobuf + AES encryption** for request/response
+- ⚡ **Async request handling** with `aiohttp`
+- 📈 Returns **likes before**, **likes after**, and **likes given by API**
+- ☁️ **Vercel deployment** ready
 
-11. **⭐ Support** — "If you like this project, please give it a ⭐ on GitHub!"
+</td>
+</tr>
+</table>
 
-Make it visually appealing, easy to read, and ready to copy-paste directly into GitHub. Bold all section headers, endpoint names, and important keywords.
+---
+
+## 📦 Requirements
+
+<div align="center">
+
+| **Requirement** | **Version** |
+|:---------------:|:-----------:|
+| 🐍 Python       | **3.8+**    |
+| 🌶️ Flask        | **2.x**     |
+| 🔗 aiohttp      | **Latest**  |
+| 📦 protobuf     | **Latest**  |
+| 🔐 pycryptodome | **Latest**  |
+| 🌐 requests     | **Latest**  |
+
+</div>
+
+```bash
+pip install flask aiohttp requests protobuf pycryptodome
