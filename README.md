@@ -2,7 +2,7 @@
 
 # 🔥 Free Fire Like Sender API
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=F75C03&center=true&vCenter=true&width=700&lines=Free+Fire+Like+Sender+API;Powered+by+MAHENDRA+KAR;Fast+%7C+Reliable+%7C+Async;Protobuf+%2B+AES+Encryption" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=F75C03&center=true&vCenter=true&width=700&lines=Free+Fire+Like+Sender+API;Powered+by+MAHENDRA;Fast+%7C+Reliable+%7C+Async;Protobuf+%2B+AES+Encryption" alt="Typing SVG" />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=header&text=Free%20Fire%20Like%20API&fontSize=32&fontColor=ffffff&animation=fadeIn" />
 
